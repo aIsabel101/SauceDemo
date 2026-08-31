@@ -25,6 +25,7 @@ npm run cypress:open
 
 ```bash
 npm test
+npm run cypress:open
 ```
 
 ## Estructura del proyecto
