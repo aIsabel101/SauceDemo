@@ -12,6 +12,16 @@
 npm install
 ```
 
+### Verificación automática del entorno
+
+El script [verify-setup.ps1](verify-setup.ps1) (PowerShell) verifica que Node.js, npm y Cypress
+estén correctamente instalados, instala lo que falte y finalmente ejecuta el Test Runner
+de Cypress (`npm run cypress:open`):
+
+```powershell
+.\verify-setup.ps1
+```
+
 ## Ejecución de las pruebas
 
 **Modo interactivo (Cypress Test Runner):**
@@ -42,6 +52,7 @@ ModuloAutomatizacion/
 │       ├── commands.js          # Comando custom cy.login()
 │       └── e2e.js
 ├── cypress.config.js
+├── verify-setup.ps1              # Script de verificación/instalación del entorno
 └── package.json
 ```
 
